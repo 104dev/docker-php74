@@ -1,5 +1,10 @@
 FROM php:7.4-fpm
 
+ARG USERNAME=www-data
+ARG GROUPNAME=www-data
+ARG UID=1000
+ARG GID=1000
+
 COPY php.ini /usr/local/etc/php/
 
 #pdo_mysqlのインストール
